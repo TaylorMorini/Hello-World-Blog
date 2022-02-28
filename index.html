@@ -1,0 +1,84 @@
+<h1>Hello World Blog!</h1>
+<p>Would you like to learn how to create a simple &quot;Hello World&quot; screen using JavaScript and Web Components from scratch? Follow these steps to see how I did it!</p>
+<h2>Before you Start</h2>
+<ul>
+<li>Install <a href="https://ohmyz.sh/#install">oh-my-zsh</a>
+<em>It is not necessary to install this on your terminal, this is a preference.  It does, however, increase usability in my opinion.</em></li>
+</ul>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xig52hcvhbknwjx6eq8h.png" alt="zsh"></p>
+<ul>
+<li>Install <a href="https://code.visualstudio.com">Visual Studio Code</a>
+<em>This is my preferred IDE to complete this process.</em></li>
+</ul>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2ifp4843ioigzw4tsfmj.png" alt="vs code"></p>
+<h2>What is Node.js/NPM?</h2>
+<blockquote>
+<p>As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.</p>
+</blockquote>
+<p>Basically, Node.js is going to allow you to run code written in JavaScript.  NPM is the default package manager for Node.js.  This means that it:</p>
+<blockquote>
+<p>puts modules in place so that node can find them, and manages dependency conflicts intelligently.</p>
+</blockquote>
+<p>The good news is that once you have successfully downloaded Node.js, NPM will automatically be usable!</p>
+<h2>Downloading Node.js</h2>
+<p>Go to <a href="https://nodejs.org/en/">Node.js</a> to begin installation.  If you are using a Mac like I am, you should see a screen that looks like the following image:
+<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ko4klemyujahtrmm42rx.png" alt="Node.js Download"></p>
+<p>You are going to want to download the &quot;Recommended For Most Users&quot; version.  Once installation is complete, you can go to your terminal and run <code>node -v</code>.
+<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xw7kipx0klh72mb9k1kp.png" alt="Checking installation"></p>
+<p>If you have correctly installed Node.js, then you should see the version of it that was recommended.  To check NPM, simply do <code>npm-v</code>.  If everything is in working order, you will see that there is a version of NPM running on your machine.</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wp6xpa12ggikmg37tkb9.png" alt="npm"></p>
+<h2>Working with GitHub</h2>
+<p>The first thing you're going to need to do is create a profile for <a href="https://github.com">GitHub</a>. Once you have created a profile, you can create a new repository by clicking the &quot;New&quot; button, as shown below.</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3oe0gy63g09ivjd0jjnb.png" alt="repo"></p>
+<p>If you haven't already, install [Git] (https://git-scm.com/downloads).  This is going to make it possible to interact with GitHub via your terminal.  To ensure Git is installed, run <code>git --version</code> in your terminal.  If you have successfully gotten git, then you will see a similar screen (below):
+<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/am1qi3pewm5jqtzi2o5t.png" alt="git"></p>
+<h2>Making a Directory via Terminal</h2>
+<p>Following these steps you can make a directory straight from your terminal:</p>
+<ol>
+<li>Open the terminal.  Run <code>cd Documents</code>. <em>This is going to navigate you to the Documents folder on your machine.  This is where I made my directory.</em></li>
+<li>Run <code>mkdir sampleDirect</code>.  <em>You can name it anything, but for the sake of the example I named mine &quot;SampleDirect&quot;.</em></li>
+<li>Run a <code>ls</code> if you want to be sure that it has successfully been created.</li>
+<li><code>cd sampleDirect</code> <em>Note: if you run a <code>ls</code> here, its going to appear empty because you haven't added anything to it yet.</em></li>
+</ol>
+<h2>Bringing it all Together</h2>
+<p>Keep your terminal open!  If you closed it, simply run the following (name specific!) to get back to your directory:
+<code>cd Documents/sampleDirect</code></p>
+<p>The first step you should take is to clone your repository.  To do so, copy the link for your specific repo:</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wg2mwx3o52iytwle1mf3.png" alt="the setup"></p>
+<p>Back in your terminal, run <code>git clone</code> and then your specific link.  It should look something like this:</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rojl4rc2rt186amghs5y.png" alt="clone"></p>
+<p>Run a <code>cd</code>.  I named my Repo &quot;sample-&quot; so for me, I would run <code>cd sample-</code>&quot;.</p>
+<p>The next thing you are going to want to do is run this command:
+<code>npm init @open-wc</code>.</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/b34g5fhrm6s8ci3jvq8r.png" alt="opening"></p>
+<p>From here:</p>
+<ol>
+<li><em>What would you like to do today?</em><code>scaffold new project</code></li>
+<li><em>What would you like to scaffold?</em><code>Web component</code></li>
+<li><em>Would you like to use a typescript?</em> <strong>No</strong></li>
+<li><em>What is the tag name of your component?</em> <strong>hello--World</strong> (you can name it anything)</li>
+<li><em>Would you like to write this file structure to a disk?</em> <strong>Yes</strong></li>
+<li><em>Do you want to install dependencies?</em> <strong>Yes, with npm.</strong></li>
+</ol>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7x5kemm7lfdzvbykhdx3.png" alt="fsetup"></p>
+<p>Successful setup will show:</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/h3d6ol1cr6vumgz428hb.png" alt="success"></p>
+<ol>
+<li>In the terminal, run <code>cd hello--world</code></li>
+<li>Run <code>npm run start</code></li>
+</ol>
+<p>Running <code>npm run start</code> in the terminal will yield:</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wzqduw9gva1dh7bbj355.png" alt="completed!"></p>
+<p>##Opening with Visual Studio Code
+Use the following steps to open with VS Code:</p>
+<ol>
+<li>At the 'Start' page in VS Code select the <strong>open</strong> button</li>
+<li>Navigate to 'Documents'</li>
+<li>Select your directory (mine was <em>sampleDirect</em>)</li>
+<li>Open your 'hello--world' file</li>
+</ol>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xkyjhtzisg0qf87s1b9x.png" alt="vsCode"></p>
+<h2>More Help</h2>
+<p>Here is a helpful cheat-sheet for <a href="https://education.github.com/git-cheat-sheet-education.pdf">Git</a> commands.
+This is a helpful tool to learn [more] (https://lit.dev/playground/#sample=examples/full-component).
+Here is my [GitHub repo] (https://github.com/TaylorMorini/402-lab).</p>
